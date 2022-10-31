@@ -1,0 +1,96 @@
+body {
+    font-family: 'Poppins', 'sans-serif';
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes logo_fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    animation-name: logo_fadein;
+    animation-duration: 3s;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.card {
+    width: 100%;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#image1, #image2, #image3, #image4, #image5 {
+    width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    header img {
+        width: 400px;
+        height: auto;
+    }
+    
+    .nav_links {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-end;
+    }
+    
+    .pricing {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        width: 300px;
+    }
+    
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #image1, #image2, #image3, #image4, #image5 {
+        width: 300px;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    animation: none;
+}
