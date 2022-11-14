@@ -209,7 +209,7 @@ main {
 }
 
 @media (prefers-reduced-motion) {
-    animation: none;
+    animation-name: none;
 }
 
 @media screen and (max-width: 700px) {
