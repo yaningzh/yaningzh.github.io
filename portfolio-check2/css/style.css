@@ -209,7 +209,8 @@ main {
 }
 
 @media (prefers-reduced-motion) {
-    animation: none;
+    #title{animation: none;}
+    .featurePage aside {animation: none;}
 }
 
 @media screen and (max-width: 700px) {
