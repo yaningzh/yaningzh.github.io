@@ -1,0 +1,267 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    font-size: 25px;
+/*    box-sizing: border-box;*/
+    background-color: black;
+    position: inherit;
+    top: 0;
+    width: 100%;
+}
+
+nav a {
+    color: aliceblue;
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav a:active {
+    color: aliceblue;
+}
+
+.currpage {
+    color: chartreuse;
+    text-decoration: underline;
+}
+
+nav a:hover {
+    background-color: brown;
+}
+
+img:hover {
+    box-shadow: 0 0 1px 1px #376F70;
+}
+
+.nonFigPage img {
+    width: 40%;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.nonFigPage {
+    text-align: center
+}
+
+.figPage img {
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid gray;
+    max-width: 300px;
+    height: 90%;
+}
+
+.figPage {
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+    width:90%;
+    text-align: center;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: stretch;
+    gap: 10px;
+}
+
+.figPage img {
+    flex-basis: 300px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.figPage figcaption {
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 30px;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    padding: 5px;
+}
+
+@keyframes text_grow {
+    from {
+        font-size: 0px;
+    }
+    to {
+        font-size: 60px;
+    }
+}
+
+#title {
+    text-align: center;
+    font-size: 60px;
+    margin: 10px;
+    font-family: 'Sono', sans-serif;
+    animation-name: text_grow;
+    animation-duration: 1s;
+}
+
+.mainTitle p {
+    font-size: 20px;
+    margin: 15px 0px;
+}
+
+.mainTitle {
+    background-image: url("../images/background.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: azure;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    text-align: left;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background: green;
+    color: white;
+    font-size: 15px;
+    padding: 5px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body {
+    display: grid;
+    min-height: 100%;
+    grid-template-rows: auto 100% auto;
+}
+
+header {
+    grid-row: 1 / span 1;
+}
+
+footer {
+    grid-row: 3 / span 1;
+}
+
+html{
+    height: 100%;
+}
+
+main {
+    grid-row: 2 / span 1;
+/*    margin-top: 45px;*/
+}
+
+@keyframes fadeIn {
+    from {
+        margin-top: 0;
+    }
+    to {
+        margin-top: 40%;
+    }
+}
+
+.featurePage {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: 4fr 3fr 3fr;
+    grid-gap: 10px;
+    width: 90%;
+}
+
+.featurePage aside {
+    grid-area: 1 / 1 / span 3 / span 1;
+    margin-top: 40%;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+#feaTitle {
+    margin-top: 20%;
+    grid-area: 1 / 2 / span 1 / span 2;
+}
+
+#fishF {
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+
+#spicyF {
+    grid-area: 2 / 3 / span 1 / span 1;
+}
+
+#pepperF {
+    grid-area: 3 / 2 / span 1 / span 1;
+}
+
+#hotF {
+    grid-area: 3 / 3 / span 1 / span 1;
+}
+
+@media (prefers-reduced-motion) {
+    animation: none;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .figPage {
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    .figPage img {
+        max-width: 200px;
+    }
+    
+    .featurePage {
+        grid-template-rows: 4fr 2fr repeat(4,1fr);
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .featurePage aside {
+        animation: none;
+        grid-area: 1 / 1 / span 1 / span 1;
+        margin-top: 0;
+    }
+    
+    .featurePage img {
+        width: 80%;
+    }
+
+    #feaTitle {
+        margin-top: 0;
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+
+    #fishF {
+        grid-area: 3 / 1 / span 1 / span 1;
+    }
+
+    #spicyF {
+        grid-area: 4 / 1 / span 1 / span 1;
+    }
+
+    #pepperF {
+        grid-area: 5 / 1 / span 1 / span 1;
+    }
+
+    #hotF {
+        grid-area: 6 / 1 / span 1 / span 1;
+    }
+    
+}
