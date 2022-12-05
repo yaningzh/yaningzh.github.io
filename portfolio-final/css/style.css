@@ -1,0 +1,496 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+}
+
+h1 {
+    font-size: 2em;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 1.3em;
+    padding: 5px;
+}
+
+/*navigation bar*/
+
+.nav_links {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    padding: 15px 0px;
+    top: 0;
+}
+
+nav a {
+    color: bisque;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a:active {
+    color: bisque;
+}
+
+.currpage {
+    color: palevioletred;
+    text-decoration: underline;
+}
+
+nav a:hover {
+    background-color: brown;
+}
+
+/*skip to main*/
+
+.skip {
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+}
+
+.skip:focus{
+    top: 20px;
+    color: black;
+    text-decoration-style: solid;
+    border: 2px solid black;
+}
+
+/*body*/
+
+html {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    min-height: 100%;
+    grid-template-rows: auto 100% auto;
+}
+
+nav {
+    grid-row: 1 / span 1;
+}
+
+main {
+    grid-row: 2 / span 1;
+}
+
+footer {
+    grid-row: 3 / span 1;
+}
+
+/*footer*/
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background: green;
+    color: white;
+    font-size: 0.75em;
+    padding: 5px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    font-size: 0;
+}
+
+/*non figure page image*/
+
+.nonFigPage img {
+    width: 80%;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.nonFigPage {
+    text-align: center;
+    font-size: 0.75em;
+}
+
+img:hover {
+    box-shadow: 0 0 1px 1px #376F70;
+}
+
+/*figure page*/
+
+.figPage img {
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid gray;
+    max-width: 300px;
+    height: 90%;
+    overflow: hidden;
+}
+
+#main p {
+    margin: 0px 5%;
+}
+
+#main h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+.figPage {
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.figPage figcaption {
+    font-size: 10px;
+}
+
+/*home page style*/
+
+#homeTitle {
+    background-color: rgba(18, 0, 54, 0.8);
+    padding: 10px;
+}
+
+@keyframes text_grow {
+    from {
+        font-size: 0px;
+    }
+    to {
+        font-size: 3em;
+    }
+}
+
+#title {
+    text-align: center;
+    font-size: 3em;
+    margin: 10px;
+    font-family: 'Sono', sans-serif;
+    animation-name: text_grow;
+    animation-duration: 1s;
+}
+
+.mainTitle {
+    background-image: url("../images/background.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: floralwhite;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    text-align: left;
+}
+
+#contactT {
+    margin: 60px 0px 10px 10px;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.form-input {
+    display: inline-block;
+}
+
+.form-input:last-of-type {
+    grid-column: 1 / -1;
+}
+
+.form-input > * {
+    display: block;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 5px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/*history page style*/
+
+#hisPage h1 {
+    text-align: center;
+}
+
+#hisPage {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 10px;
+    margin: 0px 5%;
+}
+
+#hisTitle {
+    grid-row: 1 / span 1;
+}
+
+#hisImg {
+    grid-row: 2 / span 1;
+}
+
+#hisBreed {
+    grid-row: 3 / span 1;
+}
+
+#hisHey {
+    grid-row: 4 / span 1;
+}
+
+#hisMuseum {
+    grid-row: 5 / span 1;
+}
+
+/*feature page style*/
+
+#featurePage {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 10px;
+    margin: 0px 5%;
+}
+
+#feaTitle {
+    grid-row: 2 / span 1;
+}
+
+#feaTitle h1 {
+    text-align: center;
+}
+
+aside {
+    grid-row: 1 / span 1;
+}
+
+#fishF {
+    grid-row: 3 / span 1;
+}
+
+#spicyF {
+    grid-row: 4 / span 1;
+}
+
+#pepperF {
+    grid-row: 5 / span 1;
+}
+
+#hotF {
+    grid-row: 6 / span 1;
+}
+
+@media screen and (min-width: 780px) {
+    .nav_links {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    
+    .nonFigPage img {
+        width: 80%;
+    }
+    
+    .figPage {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+        align-content: stretch;
+    }
+    
+    .contact {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #hisPage {
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #hisTitle {
+        grid-area: 1 / 1 / span 1 / span 2;
+    }
+
+    #hisImg {
+        grid-area: 2 / 1 / span 1 / span 2;
+    }
+
+    #hisBreed {
+        grid-area: 3 / 1 / span 1 / span 1;
+    }
+
+    #hisHey {
+        grid-area: 3 / 2 / span 1 / span 1;
+    }
+
+    #hisMuseum {
+        grid-area: 4 / 1 / span 1 / span 2;
+    }
+    
+    #featurePage {
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    #featurePage img {
+        width: 80%;
+    }
+
+    #feaTitle {
+        grid-area: 1 / 3 / span 1 / span 2;
+    }
+    
+    aside {
+        grid-area: 1 / 1 / span 1 / span 2;
+    }
+
+    #fishF {
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+
+    #spicyF {
+        grid-area: 2 / 2 / span 1 / span 1;
+    }
+
+    #pepperF {
+        grid-area: 2 / 3 / span 1 / span 1;
+    }
+
+    #hotF {
+        grid-area: 2 / 4 / span 1 / span 1;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nonFigPage img {
+        width: 40%;
+    }
+    
+    .mainTitle {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    button {
+        width: 10%;
+        margin-left: 45%;
+    }
+    
+    #hisPage img {
+        width: 90%;
+        height: 85%;
+    }
+    
+    #hisPage {
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #hisTitle {
+        grid-area: 1 / 1 / span 1 / span 2;
+    }
+
+    #hisImg {
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+
+    #hisBreed {
+        grid-area: 3 / 1 / span 1 / span 1;
+    }
+
+    #hisHey {
+        grid-area: 3 / 2 / span 1 / span 1;
+    }
+
+    #hisMuseum {
+        grid-area: 2 / 2 / span 1 / span 1;
+    }
+    
+    #featurePage {
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 40% repeat(2, 1fr);
+    }
+    
+    #featurePage img {
+        width: 80%;
+    }
+
+    #feaTitle {
+        grid-area: 1 / 2 / span 1 / span 2;
+    }
+    
+    aside {
+        grid-area: 1 / 1 / span 3 / span 1;
+        margin-top: 30%;
+    }
+
+    #fishF {
+        grid-area: 2 / 2 / span 1 / span 1;
+    }
+
+    #spicyF {
+        grid-area: 2 / 3 / span 1 / span 1;
+    }
+
+    #pepperF {
+        grid-area: 3 / 2 / span 1 / span 1;
+    }
+
+    #hotF {
+        grid-area: 3 / 3 / span 1 / span 1;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    #title {
+        animation: none;
+    }
+}
