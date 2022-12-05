@@ -165,7 +165,7 @@ img:hover {
 /*home page style*/
 
 #homeTitle {
-    background-color: rgba(18, 0, 54, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 10px;
 }
 
@@ -200,7 +200,7 @@ img:hover {
 }
 
 #homeCont {
-    background-color: rgba(18, 0, 54, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 10px;
 }
 
