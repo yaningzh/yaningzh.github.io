@@ -165,7 +165,7 @@ img:hover {
 /*home page style*/
 
 #homeTitle {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 10px;
 }
 
@@ -192,7 +192,7 @@ img:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: floralwhite;
+    color: black;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 10%;
@@ -200,7 +200,7 @@ img:hover {
 }
 
 #homeCont {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 10px;
 }
 
