@@ -199,6 +199,11 @@ img:hover {
     text-align: left;
 }
 
+#homeCont {
+    background-color: rgba(18, 0, 54, 0.8);
+    padding: 10px;
+}
+
 #contactT {
     margin: 60px 0px 10px 10px;
 }
