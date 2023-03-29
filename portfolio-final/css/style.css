@@ -271,6 +271,37 @@ button:hover {
     background-color: #45a049;
 }
 
+#video {
+    margin: 5% 0;
+}
+
+#video figcaption {
+    color: white;
+}
+
+.options{
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.options button{
+	margin-bottom: 5px;
+	flex-basis: 200px;
+	font-size:75%;
+    width: 150px;
+    background-color: white;
+    color:black;
+}
+
+#vol {
+    background-color: rgba(255, 255, 255, 1);
+    margin: 0 0;
+    padding: 1px;
+    width: 50%;
+}
+
 /*history page style*/
 
 #hisPage h1 {
@@ -470,6 +501,36 @@ aside {
 @media screen and (min-width: 1024px) {
     .nonFigPage img {
         width: 40%;
+    }
+
+    .options{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    #play {
+        grid-column: 1 / span 1;
+    }
+
+    #pause {
+        grid-column: 2 / span 1;
+    }
+
+    #slower {
+        grid-column: 3 / span 1;
+    }
+
+    #faster {
+        grid-column: 4 / span 1;
+    }
+
+    #skip {
+        grid-column: 5 / span 1;
+    }
+
+    #mute {
+        grid-column: 6 / span 1;
     }
     
     .mainTitle {
