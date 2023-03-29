@@ -84,10 +84,12 @@
 				<button id="faster">Speed Up</button>
 				<button id="skip">Skip Ahead</button>
                 <button id="mute">Mute</button><br>
-			    <label for="slider">Volume</label>: 0
-			    <input type="range" id="slider" min="0" max="100" value="100" step="10"> 100%<br>
-			    <div>Volume is: <span id="volume"></span><br><br></div>
 			</div>
+            <div id="vol">
+                <label for="slider">Volume</label>: 0
+			    <input type="range" id="slider" min="0" max="100" value="100" step="10"> 100%<br>
+			    <div id="vol">Volume is: <span id="volume"></span><br><br></div>
+            </div>
         </div>
 	</main>
     <script src="js/video.js"></script>
